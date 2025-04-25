@@ -15,7 +15,7 @@ export const useWebSocket = () => {
   const [history, setHistory] = useState<SensorData[]>([]);
 
   useEffect(() => {
-    const ws = new WebSocket('ws://192.168.213.231:81');
+    const ws = new WebSocket('ws://192.168.48.231:81');
 
     ws.onopen = () => {
       console.log('Connected to ESP32');
